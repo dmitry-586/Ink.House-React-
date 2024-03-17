@@ -1,0 +1,38 @@
+.Card {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    height: 690px;
+    background: rgb(225, 237, 230);
+    padding: 20px;
+
+
+    & img {
+        width: 310px;
+        height: 422px;
+    }
+    &_author {
+        @include font (18, 500, 21px);
+        color: rgb(134, 146, 139);
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    &_header {
+        @include font (30, 500, 35px);
+        margin-bottom: 8px;
+        margin-top: 0;
+    }
+    &_info {
+        @include font (18, 500, 21px);
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    .price {
+        color: rgb(89, 141, 102);
+        @include font (24, 500, 28px);
+        margin-bottom: 20px;
+    }
+    Button {
+        background: rgb(225, 237, 230);
+    }
+}

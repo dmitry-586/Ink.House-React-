@@ -1,0 +1,34 @@
+.Reproductions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 165px;
+
+    &_header {
+        @include font (40, 500, 110%)
+    }
+
+    &_buttons {
+        display: flex;
+        gap: 27px;
+    }
+    Button {
+        border-radius: 20px;
+        background: rgb(212, 232, 217);
+        border: 2px solid transparent;
+        padding: 10px 20px 10px 20px;
+        color: black;
+        @include font (20, 500, 23px);
+        
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.Cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-left: 165px;
+}

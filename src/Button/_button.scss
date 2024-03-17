@@ -1,0 +1,18 @@
+.button {
+    padding: 20px 60px 20px 60px;
+    border: 1px solid rgb(89, 141, 102);
+    color: rgb(89, 141, 102);
+    background: white;
+
+    @include font (20, 500, 23px);
+
+    &:hover {
+        cursor: pointer;
+        background: rgb(89, 141, 102);
+        color: white;
+    }
+    &.active {
+        background: rgb(55, 107, 68);
+        color: white;
+    }
+}

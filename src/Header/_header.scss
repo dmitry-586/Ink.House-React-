@@ -1,0 +1,18 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(225, 237, 230);
+    padding: 33px 165px;
+    @include font (20, 500, 23px);
+
+    &_menu {
+        display: flex;
+        list-style: none;
+        gap: 60px;
+        cursor: pointer;
+    }
+
+    & li:hover {
+        color: rgb(89, 141, 102);
+    }
+}

@@ -1,0 +1,25 @@
+.intro {
+    display: flex;
+    align-items: center;
+    padding: 0 165px;
+
+    &_info {
+        width: 540px;
+        margin-left: 30px
+    }
+
+    &_header {
+        @include font (60, 500, 110%);
+    }
+
+    &_text {
+        @include font (18, 500, 150%);
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+
+    b {
+        color: rgb(89, 141, 102);
+        font-weight: 500;
+    }
+}

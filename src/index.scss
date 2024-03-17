@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'mixin';
+@import 'Header/_header.scss';
+@import 'Intro/_intro.scss';
+@import 'Button/_button.scss';
+@import 'Reproductions/_reproductions.scss';
+@import 'Reproductions/Card/_card.scss';
+@import 'NewCollection/_newCollection.scss';
+@import 'AboutTeam/_aboutTeam.scss';
+@import 'Footer/_footer.scss';
+
+body {
+    font-family: 'Raleway';    
+    padding: 0;
+    margin: 0;
+    color: rgb(44, 45, 53);
+    overflow-x: hidden;
+}
+
+
+

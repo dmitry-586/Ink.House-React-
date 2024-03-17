@@ -1,0 +1,26 @@
+.AboutTeam {
+    display: flex;
+    padding: 70px 165px;
+    gap: 30px;
+
+    &_info {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        justify-content: end;
+        margin-bottom: 44px;
+        gap: 20px;
+
+        &_header {
+            @include font (40, 500,110%);
+        }
+        &_text {
+            @include font (18, 500, 150%);
+        }
+        &_avatrs {
+            display: flex;
+            gap: 30px;
+        }
+
+    }
+}
