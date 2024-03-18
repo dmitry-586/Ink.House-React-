@@ -1,9 +1,24 @@
+@keyframes scrolling-header {
+    to {
+        height: 45px;
+    }
+}
 .header {
     display: flex;
     justify-content: space-between;
     background: rgb(225, 237, 230);
-    padding: 33px 165px;
+    padding: 0 165px;
+    height: 100px;
+    align-items: center;
     @include font (20, 500, 23px);
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    animation-name: scrolling-header;
+    animation-fill-mode: both;
+    animation-timeline: scroll();
+    animation-range: 100px 400px;
 
     &_menu {
         display: flex;

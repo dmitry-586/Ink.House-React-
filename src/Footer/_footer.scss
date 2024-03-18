@@ -1,46 +1,48 @@
-@import 'footerMenu.module';
+@import "footerMenu.module";
 
 .Footer {
+  display: flex;
+  padding: 23px 165px;
+  background: rgb(225, 237, 230);
+  
+
+  &_logo {
+    margin-right: 115px;
+  }
+  &_number {
+    @include font(20, 500, 23px);
     display: flex;
-    padding: 23px 165px;
+    flex-direction: column;
+    gap: 8px;
+    p {
+      margin: 0;
+    }
 
-    &_logo {
-        margin-right: 115px;
+    &_add {
+      @include font(18, 500, 21px);
+      color: rgb(134, 146, 139);
     }
-    &_number {
-        @include font (20, 500, 23px);
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        p {
-            margin: 0;
-        }
+  }
+  &_menu_wrapper {
+    display: flex;
+    gap: 60px;
+  }
+  &_icons {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
 
-        &_add {
-            @include font (18, 500, 21px);
-            color: rgb(134, 146, 139);
-        }
+    p {
+      margin-top: 6px;
+      margin-bottom: 0;
+      @include font(12, 500, 120%);
+      color: rgb(134, 146, 139);
     }
-    &_menu_wrapper {
-        display: flex;
-        gap: 60px;
-    }
-    &_icons {
-        display: flex;
-        flex-direction: column;
-        margin-left: auto;
-        
-        p {
-            margin-top: 6px;
-            margin-bottom: 0;
-            @include font (12, 500, 120%);
-            color: rgb(134, 146, 139);
-        }
 
-        &_images {
-            display: flex;
-            gap: 30px;
-            margin-bottom: 6px;
-        }
+    &_images {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 6px;
     }
+  }
 }

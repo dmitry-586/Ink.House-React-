@@ -15,7 +15,17 @@ body {
     margin: 0;
     color: rgb(44, 45, 53);
     overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        background: rgb(225, 237, 230);
+        width: 7px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: rgb(89, 141, 102);
+        border-radius: 5px;
+    }
 }
+
 
 
 

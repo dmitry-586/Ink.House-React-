@@ -1,8 +1,30 @@
+@keyframes fade-in {
+    from {
+        translate: -25vw;
+        opacity: 0;
+    }
+}
+@keyframes fade-in-second {
+    from {
+        translate: 25vw;
+        opacity: 0;
+    }
+}
+
 .AboutTeam {
     display: flex;
     padding: 70px 165px;
     gap: 30px;
 
+    &_img {
+        animation-name: fade-in;
+        animation-fill-mode: both;
+        animation-timing-function: linear;
+
+        view-timeline-name: --fade-in-image;
+        animation-timeline: --fade-in-image;
+        animation-range: 18% 42%;
+    }
     &_info {
         display: flex;
         flex-direction: column;
@@ -20,6 +42,13 @@
         &_avatrs {
             display: flex;
             gap: 30px;
+            animation-name: fade-in-second;
+            animation-fill-mode: both;
+            animation-timing-function: linear;
+
+            view-timeline-name: --fade-in-image-second;
+            animation-timeline: --fade-in-image-second;
+            animation-range: 5% 16%;
         }
 
     }

@@ -1,7 +1,7 @@
 export default function AboutTeam () {
     return(
         <div className="AboutTeam">
-            <img src="src/assets/AboutTeam/Group210.png" alt="" />
+            <img src="src/assets/AboutTeam/Group210.png" alt="" className="AboutTeam_img" />
             <div className="AboutTeam_info">
                 <div className="AboutTeam_info_header">Наша команда</div>
                 <div className="AboutTeam_info_text">Значимость этих проблем настолько очевидна, что базовый вектор развития позволяет оценить значение экспериментов, поражающих по своей масштабности и грандиозности. Мы вынуждены отталкиваться от того, что консультация с широким активом.</div>
