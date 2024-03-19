@@ -1,0 +1,44 @@
+.Reproductions {
+    @media (min-width: 1200px) {
+    
+    }
+    @media (992px <= width <= 1200px) {
+        padding: 0 100px;
+    }
+    @media (768px <= width <= 991px) {
+        padding: 0 60px;
+
+        &_header {
+            @include font (33, 500, 100%);
+        }
+        &_buttons {
+            gap: 20px;
+        }
+        Button {
+            padding: 8px 18px;
+            @include font (18, 500, 22px);
+        }
+    }
+    @media (480px <= width <= 767px) {
+        padding: 0 15px;
+        flex-direction: column;
+        align-items: start;
+        margin-bottom: 20px;
+
+        &_header {
+            @include font (33, 500, 110%);
+            margin-bottom: 20px;
+        }
+        &_buttons {
+            gap: 20px;
+        }
+        Button {
+            padding: 8px 18px;
+            @include font (18, 500, 22px);
+        }
+    }
+    @media (max-width: 479px) {
+        
+    }
+}
+

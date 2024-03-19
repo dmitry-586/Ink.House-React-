@@ -1,13 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import 'mixin';
 @import 'Header/_header.scss';
+@import 'Header/_media_header.scss';
 @import 'Intro/_intro.scss';
+@import 'Intro/_media_intro.scss';
 @import 'Button/_button.scss';
 @import 'Reproductions/_reproductions.scss';
 @import 'Reproductions/Card/_card.scss';
+@import 'Reproductions/_media_reproductions.scss';
+@import 'Reproductions/Card/_media_card.scss';
 @import 'NewCollection/_newCollection.scss';
+@import 'NewCollection/_media_newCollection.scss';
 @import 'AboutTeam/_aboutTeam.scss';
+@import 'AboutTeam/_media_aboutTeam.scss';
 @import 'Footer/_footer.scss';
+@import 'src/Footer/_media_footer.scss';
 
 body {
     font-family: 'Raleway';    

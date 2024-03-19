@@ -1,0 +1,57 @@
+.Cards {
+    @media (min-width: 1200px) {
+
+    }
+    @media (992px <= width <= 1200px) {
+        padding: 0 100px;
+    }
+    @media (768px <= width <= 991px) {
+        
+    }
+    @media (480px <= width <= 767px) {
+        
+    }
+    @media (max-width: 479px) {
+        
+    }
+}
+
+.Card {
+    @media (width <= 1200px) {
+        width: 200px;
+        height: 514px;
+
+        & img {
+            width: 200px;
+            height: 250px;
+        }
+        &_author {
+            @include font (16, 500, 19px);
+            color: rgb(134, 146, 139);
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+        &_header {
+            @include font (24, 500, 28px);
+            margin-bottom: 8px;
+            margin-top: 0;
+        }
+        &_info {
+            @include font (16, 500, 19px);
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .price {
+            color: rgb(89, 141, 102);
+            @include font (20, 500, 23px);
+            margin-bottom: 10px;
+            margin-top: auto
+        }
+        Button {
+            @include font (18, 500, 21px);
+            padding: 20px 55px;
+            margin-top: auto;
+            margin: 0;
+        }
+    }
+}

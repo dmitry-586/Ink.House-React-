@@ -1,0 +1,60 @@
+@media (min-width: 1200px) {
+    .header {
+        @include font (24, 500, 26px);
+
+        &_media {
+            height: 45%;
+        }
+        &_cart {
+            height: 55%;
+        }
+        &_menu {
+            height: 50px;
+            align-items: center;
+        }
+    }
+}
+@media (992px <= width <= 1200px) {
+    .header {
+        padding: 0 100px;
+        height: 90px;
+    }
+}
+@media (768px <= width <= 991px) {
+    .header {
+        padding: 0 70px;
+        height: 90px;
+
+        &_menu {
+            gap: 40px;
+        }
+    }
+}
+@media (480px <= width <= 767px) {
+    .header {
+        padding: 0 30px;
+        padding-top: 13px;
+        flex-direction: column;
+        height: 100%;
+        @include font (15, 500, 20px);
+
+
+        &_media {
+            width: 100%;
+        }
+        &_cart {
+            height: 20px;
+        }
+        &_menu {
+            width: 100%;
+            justify-content: space-between;
+            padding: 0;
+            align-items: center;
+            gap: 0;
+            margin-top: 0;
+        }
+    }
+}
+@media (max-width: 479px) {
+    
+}

@@ -1,5 +1,4 @@
 import React from 'react'
-import './App.scss'
 import Header from './Header/Header';
 import Intro from './Intro/Intro';
 import Reproductions from './Reproductions/Reproductions';

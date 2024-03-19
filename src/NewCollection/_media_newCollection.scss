@@ -1,0 +1,43 @@
+.NewCollection {
+    @media (min-width: 1200px) {
+        
+    }
+    @media (992px <= width <= 1200px) {
+        padding: 70px 100px;
+
+        &_info {
+            width: 80%;
+        }
+    }
+    @media (768px <= width <= 991px) {
+        padding: 60px 100px;
+
+        &_info {
+            width: 80%;
+            margin-bottom: 30px;
+        }
+    }
+    @media (480px <= width <= 767px) {
+        padding: 40px 20px;
+        
+        &_header {
+            height: 70px;
+            @include font (33, 500, 100%);
+            gap: 10px;
+
+        }
+        &_info {
+            @include font (16, 500, 130%);
+            width: 80%;
+            margin-bottom: 30px;
+        }
+
+        Button {
+            padding: 15px 45px;
+            font-size: 20px;
+        }
+    }
+}
+@media (max-width: 479px) {
+    
+}

@@ -18,13 +18,18 @@
     animation-name: scrolling-header;
     animation-fill-mode: both;
     animation-timeline: scroll();
-    animation-range: 100px 400px;
+    animation-range: 100px 600px;
 
+    &_wrapper {
+        width: 20%;
+        overflow: hidden;
+    }
     &_menu {
         display: flex;
         list-style: none;
         gap: 60px;
         cursor: pointer;
+        padding-left: 0;
     }
 
     & li:hover {
