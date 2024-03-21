@@ -1,15 +1,17 @@
 .Cards {
     @media (min-width: 1200px) {
-
+        padding-left: 165px;
+        justify-content: start;
     }
     @media (992px <= width <= 1200px) {
-        padding: 0 100px;
+        padding: 0 70px;
     }
     @media (768px <= width <= 991px) {
-        
+        padding: 0 50px;
     }
     @media (480px <= width <= 767px) {
-        
+        padding-left: 50px;
+        justify-content: start;
     }
     @media (max-width: 479px) {
         

@@ -4,8 +4,16 @@
   display: flex;
   padding: 23px 165px;
   background: rgb(225, 237, 230);
-  
 
+
+  &_p {
+    display: flex;
+    flex-direction: column;
+  }
+  &_wrapper {
+    display: flex;
+    width: 100%;
+  }
   &_logo {
     margin-right: 115px;
   }
@@ -26,6 +34,7 @@
   &_menu_wrapper {
     display: flex;
     gap: 60px;
+    border-bottom: transparent;
   }
   &_icons {
     display: flex;
@@ -45,4 +54,5 @@
       margin-bottom: 6px;
     }
   }
+
 }

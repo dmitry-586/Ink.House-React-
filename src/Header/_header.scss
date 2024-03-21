@@ -3,6 +3,11 @@
         height: 45px;
     }
 }
+@keyframes scrolling-header-media {
+    to {
+        height: 20px;
+    }
+}
 .header {
     display: flex;
     justify-content: space-between;
@@ -14,6 +19,7 @@
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 2;
 
     animation-name: scrolling-header;
     animation-fill-mode: both;
@@ -21,7 +27,7 @@
     animation-range: 100px 600px;
 
     &_wrapper {
-        width: 20%;
+        width: 25%;
         overflow: hidden;
     }
     &_menu {

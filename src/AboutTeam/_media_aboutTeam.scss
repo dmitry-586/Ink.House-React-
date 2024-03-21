@@ -1,15 +1,38 @@
-@media (min-width: 1200px) {
+.AboutTeam {
+    @media (min-width: 1200px) {
+    
+    }
+    @media (992px <= width <= 1200px) {
+        padding: 70px 100px;
+    }
+    @media (480px <= width <= 991px) {
+        padding: 20px 100px;
+        flex-direction: column;
+        
+        &_img {
+            width: 70%;
+            animation-range: 16% 70%;
+        }
+        &_info {
+            width: 90%;
 
-}
-@media (992px <= width <= 1200px) {
+            &_avatrs {
+                animation-name: fade-in;
+                animation-fill-mode: both;
+                animation-timing-function: linear;
+        
+                view-timeline-name: --fade-in-image;
+                animation-timeline: --fade-in-image;
+                animation-range: 5% 30%; 
+            }
+        }
+    }
+    @media (480px <= width <= 767px) {
+        padding: 20px 50px;
 
-}
-@media (768px <= width <= 991px) {
-    
-}
-@media (480px <= width <= 767px) {
-    
-}
-@media (max-width: 479px) {
-    
+
+    }
+    @media (max-width: 479px) {
+        
+    }
 }
