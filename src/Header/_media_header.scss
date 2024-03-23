@@ -1,63 +1,97 @@
-@media (min-width: 1200px) {
-    .header {
-        @include font (24, 500, 26px);
-
-        &_media {
-            height: 45%;
-        }
-        &_cart {
-            height: 55%;
-        }
-        &_menu {
-            height: 50px;
-            align-items: center;
-        }
-    }
-}
-@media (992px <= width <= 1200px) {
-    .header {
-        padding: 0 100px;
-        height: 90px;
-    }
-}
-@media (768px <= width <= 991px) {
-    .header {
-        padding: 0 70px;
-        height: 90px;
-
-        &_menu {
-            gap: 40px;
-        }
-    }
-}
-@media (480px <= width <= 767px) {
-    .header {
-        padding: 10px 30px;
-        padding-top: 13px;
-        flex-direction: column;
-        height: 60px;
-        @include font (15, 500, 20px);
-        animation-name: scrolling-header-media;
-        animation-fill-mode: both;
-        animation-timeline: scroll();
-        animation-range: 50px 450px;
-
-        &_media {
-            width: 100%;
-        }
-        &_cart {
-            height: 20px;
-        }
-        &_menu {
-            width: 100%;
-            justify-content: center;
-            padding: 0;
-            align-items: center;
-            gap: 60px;
-            margin: 0;
-        }
-    }
-}
-@media (max-width: 479px) {
+.header {
+    @media (min-width: 1200px) {
+        
+            @include font (24, 500, 26px);
     
+            &_media {
+                height: 45%;
+            }
+            &_cart {
+                height: 55%;
+            }
+            &_menu {
+                height: 50px;
+                align-items: center;
+            }
+        
+    }
+    @media (992px <= width <= 1200px) {
+        
+            padding: 0 100px;
+            height: 90px;
+        
+    }
+    @media (768px <= width <= 991px) {
+        
+            padding: 0 70px;
+            height: 90px;
+    
+            &_menu {
+                gap: 40px;
+            }
+        
+    }
+    @media (480px <= width <= 767px) {
+        
+            padding: 10px 30px;
+            padding-top: 13px;
+            flex-direction: column;
+            height: 60px;
+            @include font (15, 500, 20px);
+            animation-name: scrolling-header-media;
+            animation-fill-mode: both;
+            animation-timeline: scroll();
+            animation-range: 50px 450px;
+    
+            &_media {
+                width: 100%;
+            }
+            &_cart {
+                height: 20px;
+            }
+            &_menu {
+                width: 100%;
+                justify-content: center;
+                padding: 0;
+                align-items: center;
+                gap: 60px;
+                margin: 0;
+            }
+            
+        
+    }
+    @media (max-width: 479px) {
+        
+            padding: 10px 20px;
+            height: 20px;
+            animation: none;
+    
+            &_media {
+                width: 100%;
+            }
+            &_menu {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                position: fixed;
+                top: 0;
+                right: 0;
+                width: 60%;
+                background: rgb(225, 237, 230);
+                animation: burgerAnimationOpen 0.5s;             
+                @include font (16, 500, 10px);
+                gap: 30px;
+                padding-top: 50px;
+                padding-bottom: 10px;
+                border-radius: 5px;
+                margin-right: 20px;
+            }
+            &_cart {
+                height: 20px;
+            }
+            & .burger {
+                display: flex;
+                z-index: 10;
+            }
+    }
 }

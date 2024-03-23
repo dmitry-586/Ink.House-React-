@@ -61,7 +61,7 @@
             padding: 15px 45px;
         }
     }
-    @media (480px <= width <= 767px) {
+    @media (max-width: 767px) {
         padding: 0;
 
         &_info {
@@ -86,7 +86,19 @@
             font-size: 18px;
         }
     }
-}
-@media (max-width: 479px) {
-    
+    @media (max-width: 479px) {
+        & img {
+            height: 250px;
+        }
+        &_header {
+            @include font (30, 500, 100%);
+        }
+        &_text {
+            display: none;
+        }
+        Button {
+            padding: 8px 25px;
+            font-size: 15px;
+        }
+    }
 }

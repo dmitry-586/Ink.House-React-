@@ -9,13 +9,11 @@
     @media (768px <= width <= 991px) {
         padding: 0 50px;
     }
-    @media (480px <= width <= 767px) {
+    @media (max-width: 767px) {
         padding-left: 50px;
         justify-content: start;
     }
-    @media (max-width: 479px) {
-        
-    }
+    
 }
 
 .Card {
@@ -52,6 +50,35 @@
         Button {
             @include font (18, 500, 21px);
             padding: 20px 55px;
+            margin-top: auto;
+            margin: 0;
+        }
+    }
+    @media (max-width: 479px) {
+        height: 380px;
+        width: 160px;
+        padding: 10px;
+
+        & img {
+            height: 210px;
+            width: 160px;
+        }
+        &_author {
+            @include font (14, 500, 16px);
+        }
+        &_header {
+            @include font (20, 500, 22px);
+        }
+        &_info {
+            display: none;
+        }
+        .price {
+            @include font (17, 500, 20px);
+            margin-top: auto;
+        }
+        Button {
+            @include font (15, 500, 16px);
+            padding: 15px;
             margin-top: auto;
             margin: 0;
         }

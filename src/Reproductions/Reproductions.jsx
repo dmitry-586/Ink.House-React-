@@ -3,7 +3,6 @@ import Card from "./Card/Card"
 import { array } from "./Card/data"
 import ReproductionSection from "./ReproductionsSection"
 
-
 export default function Reproductions () {
     const [btn, setBtn] = useState('France')
 

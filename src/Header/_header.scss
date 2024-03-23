@@ -1,3 +1,5 @@
+@import 'burgerMenu';
+
 @keyframes scrolling-header {
     to {
         height: 45px;
@@ -36,9 +38,15 @@
         gap: 60px;
         cursor: pointer;
         padding-left: 0;
+        
+        &.active {
+            display: flex;
+        }
     }
 
     & li:hover {
         color: rgb(89, 141, 102);
     }
+
+    
 }
