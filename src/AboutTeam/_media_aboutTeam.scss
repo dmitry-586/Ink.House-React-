@@ -5,7 +5,7 @@
     @media (992px <= width <= 1200px) {
         padding: 70px 100px;
     }
-    @media (480px <= width <= 991px) {
+    @media (max-width: 991px) {
         padding: 20px 100px;
         flex-direction: column;
         
@@ -27,12 +27,27 @@
             }
         }
     }
-    @media (480px <= width <= 767px) {
+    @media (max-width: 767px) {
         padding: 20px 50px;
-
-
     }
     @media (max-width: 479px) {
-        
+        padding: 20px;
+
+        &_info {
+
+            &_header {
+                @include font (30, 500,110%);
+            }
+            &_text {
+                @include font (15, 500, 150%);
+            }
+            &_avatrs {
+                gap: 20px;
+
+                & img {
+                    height: 70px;
+                }
+            }
+        }
     }
 }

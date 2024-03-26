@@ -24,7 +24,7 @@
             display: flex;
         }
     }
-    @media (480px <= width <= 767px) {
+    @media (max-width: 767px) {
         flex-direction: column;
         padding: 23px 40px;
         
@@ -55,6 +55,27 @@
         }
     }
     @media (max-width: 479px) {
-        
+        padding: 16px 20px;
+
+        &_logo {
+            height: 35px;
+        }
+        &_number {
+            @include font(13, 500, 18px);
+            gap: 0;
+
+            &_add {
+                @include font(13, 500, 18px);
+              }
+        }
+        &_menu_wrapper {
+            gap: 20px;
+        }
+        &_icons_images img {
+            height: 16px;
+        }
+        &_p p {
+            @include font (10, 500, 10px);
+        }
     }
 }

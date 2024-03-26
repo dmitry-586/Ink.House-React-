@@ -17,7 +17,7 @@
             margin-bottom: 30px;
         }
     }
-    @media (480px <= width <= 767px) {
+    @media (max-width: 767px) {
         padding: 40px 20px;
         
         &_header {
@@ -37,7 +37,25 @@
             font-size: 20px;
         }
     }
-}
-@media (max-width: 479px) {
-    
+    @media (max-width: 479px) {
+        &_header {
+            height: 100%;
+            width: 100%;
+            @include font (25, 500, 100%);
+            gap: 10px;
+            
+            & img {
+                height: 60px;
+            }
+        }
+        &_info {
+            @include font (11.7, 500, 130%);
+            width: 80%;
+            margin-bottom: 30px;
+        }
+        Button {
+            padding: 12px 30px;
+            font-size: 16px;
+        }
+    }
 }

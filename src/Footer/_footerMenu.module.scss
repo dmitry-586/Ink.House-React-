@@ -13,4 +13,17 @@
         margin: 0;
         @include font (20, 500, 23px);
     }
+
+    @media (max-width: 479px) {
+        li {
+            
+            @include font (13.5, 500, 130%);
+           
+        }
+        h3 {
+           
+            @include font (16, 500, 20px);
+        }
+    }
 }
+
