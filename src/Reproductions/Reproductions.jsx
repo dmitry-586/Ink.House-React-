@@ -2,7 +2,7 @@ import { useState } from "react"
 import Card from "./Card/Card"
 import { array } from "./Card/data"
 import ReproductionSection from "./ReproductionsSection"
-import Slider from "./Card/Slider"
+import Slider from "./Card/Slider/Slider"
 
 export default function Reproductions () {
     const [btn, setBtn] = useState('France')

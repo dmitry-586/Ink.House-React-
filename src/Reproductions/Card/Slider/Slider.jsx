@@ -1,23 +1,16 @@
 import { useState } from "react"
-import Card from "./Card"
-import { array } from "./data"
+import Card from "../Card"
+import { array } from "../data"
 
 
 
 export default function Slider ({ slides, numPrev, numNext }) {
     const [currentIndex, setCurrentIndex] = useState(numPrev);
 
-    const styleForSlider = {
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center'
-    }
     const styleForBtn = {
-        height: '40px',
-        width: '80px',
-        border: '1px solid rgb(89, 141, 102)',
+        border: '1px solid transparent',
         color: 'rgb(89, 141, 102)',
-        background: 'white',
+        background: 'transparent',
         margin: '0 10px'
     }
 
@@ -32,12 +25,12 @@ export default function Slider ({ slides, numPrev, numNext }) {
         setCurrentIndex(newIndex);
     }
     return (
-        <div style={styleForSlider}>
-            <button style={styleForBtn} onClick={goPrev}>prev</button>
-            <div style={{display: 'flex',width: '180px', overflow: 'hidden'}}> 
+        <div className="styleForSlider">
+            <button className="styleForBtn" onClick={goPrev}><img src="src/assets/Slider/icon-left.png" alt="" height={'50px'}/></button>
+            <div> 
                 <Card {...array[currentIndex]}/>
             </div>
-            <button style={styleForBtn} onClick={goNext}>next</button>
+            <button className="styleForBtn" onClick={goNext}><img src="src/assets/Slider/icon-right.png" alt="" height={'50px'}/></button>
         </div>
     )
 }
