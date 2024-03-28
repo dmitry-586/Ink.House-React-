@@ -2,10 +2,10 @@
     @media (min-width: 1200px) {
     
     }
-    @media (992px <= width <= 1200px) {
+    @media (max-width: 1200px) {
         padding: 0 100px;
     }
-    @media (768px <= width <= 991px) {
+    @media (max-width: 992px) {
         padding: 0 60px;
 
         &_header {
@@ -19,7 +19,7 @@
             @include font (18, 500, 22px);
         }
     }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
         padding: 0 50px;
         flex-direction: column;
         align-items: start;
@@ -37,7 +37,7 @@
             @include font (18, 500, 22px);
         }
     }
-    @media (max-width: 479px) {
+    @media (max-width: 480px) {
         padding: 0 10px;
 
         Button {

@@ -3,13 +3,13 @@
         padding-left: 165px;
         justify-content: start;
     }
-    @media (992px <= width <= 1200px) {
+    @media (max-width: 1200px) {
         padding: 0 70px;
     }
-    @media (768px <= width <= 991px) {
+    @media (max-width: 992px) {
         padding: 0 50px;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
         padding-left: 50px;
         justify-content: start;
         display: none;

@@ -1,6 +1,9 @@
 import Button from "../Button/Button";
 
-export default function NewCollection() {
+import { Link, animateScroll as scroll } from "react-scroll";
+
+export default function NewCollection({ active, onChange}) {
+
     return(
         <div className="NewCollection">
             <div className="NewCollection_header">
@@ -12,7 +15,7 @@ export default function NewCollection() {
             Принимая во внимание показатели успешности, граница обучения кадров предопределяет высокую востребованность направлений прогрессивного развития.
             </div>
             <div className="NewCollection_btn">
-                <Button>Ознакомиться</Button>
+                <Link to="Reproductions" smooth={true} offset={-75}><Button>Ознакомиться</Button></Link>
             </div>
         </div>
     )

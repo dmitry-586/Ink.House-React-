@@ -24,7 +24,7 @@
             font-size: 28px;
         }
     }
-    @media (992px <= width <= 1200px) {
+    @media (max-width: 1200px) {
         padding: 0 100px;
         
         &_header {
@@ -39,7 +39,7 @@
             height: 450px;
         }
     }
-    @media (768px <= width <= 991px) {
+    @media (max-width: 992px) {
         padding: 0 50px;
 
         &_info {
@@ -61,7 +61,7 @@
             padding: 15px 45px;
         }
     }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
         padding: 0;
 
         &_info {
@@ -86,7 +86,7 @@
             font-size: 18px;
         }
     }
-    @media (max-width: 479px) {
+    @media (max-width: 480px) {
         & img {
             height: 230px;
         }

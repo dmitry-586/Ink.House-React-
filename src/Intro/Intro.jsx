@@ -1,5 +1,6 @@
 import Button from "../Button/Button";
 
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export default function Intro () {
     return (
@@ -10,7 +11,7 @@ export default function Intro () {
                 <p className="intro_text">
                     Высокое качество отрисовки на плотной бумаге или льняном холсте. Редкие произведения, доступные цены.
                 </p>
-                <Button>Продукция</Button>
+                <Link to="Reproductions" smooth={true} offset={-75}><Button>Продукция</Button></Link>
             </div>
         </div>
     )
